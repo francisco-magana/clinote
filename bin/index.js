@@ -1,3 +1,5 @@
 #!/usr/bin/env node
+const main = require('../src/app');
 
-console.log('hello world');
+// Incializacion de la aplicacion
+main();
