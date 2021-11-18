@@ -33,6 +33,10 @@ const options = [
 	},
 ];
 
+/**
+ * Function that controls and show all the options of the applicaction
+ * @returns the option selected by the user in the menu
+ */
 const getMainMenuOption = async() => {
 
     const { option } = await inquirer.prompt(options);
@@ -40,6 +44,10 @@ const getMainMenuOption = async() => {
 
 };
 
+/**
+ * Function that draws the main title of the application, it is here
+ * to be easy to change in the future or show it in other places
+ */
 const drawMainMenuTitle = () => {
 
     console.clear();

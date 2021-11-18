@@ -2,8 +2,10 @@ const chalk = require("chalk");
 
 const {getMainMenuOption, drawMainMenuTitle} = require("./inquirer/main-menu");
 const pause = require("./inquirer/pause");
-const Note = require("./models/note.model");
 
+/**
+ * The main funtion of the app
+ */
 const main = async() => {
 
     let option;
