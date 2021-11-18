@@ -1,6 +1,12 @@
+const chalk = require('chalk');
 const inquirer = require('inquirer');
+
 const Note = require('../models/note.model');
 
+
+/**
+ * Steps to make the note
+ */
 const options = [
 	{
 		type: 'input',
@@ -29,9 +35,13 @@ const options = [
 	},
 ];
 
+/**
+ * Method that allow us to create a new note by prompt
+ */
 const createNote = async () => {
 	const { title, content, password } = await inquirer.prompt(options);
 	const note = new Note(title, content, password);
+    console.log(chalk.bgGreen(`Your note was created succesfully!`) + '  ' + chalk.bgBlue(note.createdAt));
 	console.log(note);
 };
 
