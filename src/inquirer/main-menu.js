@@ -40,4 +40,19 @@ const getMainMenuOption = async() => {
 
 };
 
-module.exports = getMainMenuOption;
+const drawMainMenuTitle = () => {
+
+    console.clear();
+   console.log('  ______   __        ______  __    __   ______   ________  ________ ');
+   console.log(' /      \\ /  |      /      |/  \\  /  | /      \\ /        |/        |');
+   console.log('/$$$$$$  |$$ |      $$$$$$/ $$  \\ $$ |/$$$$$$  |$$$$$$$$/ $$$$$$$$/ ');
+   console.log('$$ |  $$/ $$ |        $$ |  $$$  \\$$ |$$ |  $$ |   $$ |   $$ |__    ');
+   console.log('$$ |      $$ |        $$ |  $$$$  $$ |$$ |  $$ |   $$ |   $$    |   ');
+   console.log('$$ |   __ $$ |        $$ |  $$ $$ $$ |$$ |  $$ |   $$ |   $$$$$/    ');
+   console.log('$$ \\__/  |$$ |_____  _$$ |_ $$ |$$$$ |$$ \\__$$ |   $$ |   $$ |_____ ');
+   console.log('$$    $$/ $$       |/ $$   |$$ | $$$ |$$    $$/    $$ |   $$       |');
+   console.log(' $$$$$$/  $$$$$$$$/ $$$$$$/ $$/   $$/  $$$$$$/     $$/    $$$$$$$$/ \n\n');
+
+}
+
+module.exports = {getMainMenuOption, drawMainMenuTitle};
