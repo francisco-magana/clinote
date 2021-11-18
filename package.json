@@ -1,0 +1,19 @@
+{
+  "name": "clinote",
+  "version": "1.0.0",
+  "description": ":warning: **This readme and the project are works in progress**: Be patient :smile:",
+  "main": "bin/index.js",
+  "bin": {
+    "clinote": "bin/index.js"
+  },
+  "scripts": {
+    "start": "node bin/index.js"
+  },
+  "keywords": [],
+  "author": "Francisco Magaña",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^8.2.0",
+    "yargs": "^17.2.1"
+  }
+}
