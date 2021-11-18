@@ -1,9 +1,14 @@
+const getMainMenuOption = require("./inquirer/main-menu");
 const Note = require("./models/note.model");
 
-const main = () => {
+const main = async() => {
 
-    const nota = new Note('Mi nota', 'Some content');
-    console.log(nota);
+    let option;
+
+    do {
+        option = await getMainMenuOption();
+        console.log(option);
+    } while(option != 0);
 
 }
 
