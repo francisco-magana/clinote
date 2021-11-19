@@ -10,11 +10,11 @@
             "password": false,
             "createdAt": "2021-11-19"
         },
-        "bcf647ac-0e45-4da6-9e66-78e638eba57e": {
-            "id": "bcf647ac-0e45-4da6-9e66-78e638eba57e",
-            "title": "my new note",
-            "content": "this is the content for my notes",
-            "password": true,
+        "9ab1916f-6730-4fc0-97a6-fc5264bb78d6": {
+            "id": "9ab1916f-6730-4fc0-97a6-fc5264bb78d6",
+            "title": "how to set up discord",
+            "content": "intall and next next next",
+            "password": false,
             "createdAt": "2021-11-19"
         }
     }
