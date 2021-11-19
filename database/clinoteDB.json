@@ -1,0 +1,21 @@
+{
+    "version": "1.0",
+    "name": "clinoteDB",
+    "password": "",
+    "notes": {
+        "f79068ee-e474-43ac-b981-c02527f53e0f": {
+            "id": "f79068ee-e474-43ac-b981-c02527f53e0f",
+            "title": "my note",
+            "content": "description for my note :)",
+            "password": false,
+            "createdAt": "2021-11-19"
+        },
+        "bcf647ac-0e45-4da6-9e66-78e638eba57e": {
+            "id": "bcf647ac-0e45-4da6-9e66-78e638eba57e",
+            "title": "my new note",
+            "content": "this is the content for my notes",
+            "password": true,
+            "createdAt": "2021-11-19"
+        }
+    }
+}
