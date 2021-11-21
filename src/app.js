@@ -5,13 +5,14 @@ const listNotesAndGetID = require('./commands/list-notes');
 const {getMainMenuOption, drawMainMenuTitle} = require("./inquirer/main-menu");
 const pause = require("./inquirer/pause");
 const readNote = require("./commands/read-note");
+const editNotes = require('./commands/edit-note');
 
 /**
  * The main funtion of the app
  */
 const main = async() => {
 
-    let option;
+    let option, noteID;
 
     do {
 
@@ -23,10 +24,14 @@ const main = async() => {
                 await createNote();
                 break;
             case 2:
-                let noteID = await listNotesAndGetID();
+                noteID = await listNotesAndGetID();
                 if (noteID !== 'no-read') {
                     readNote(noteID);
                 }
+                break;
+            case 3:
+                noteID = await listNotesAndGetID();
+                await editNotes(noteID);
                 break;
             default:
                 console.log(chalk.bgRed('The option selected is not supported'));

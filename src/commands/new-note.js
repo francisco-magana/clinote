@@ -29,13 +29,13 @@ const options = [
 		message: 'Do you want to protect your note with your master password?',
 		choices: [
 			{
-				value: true,
-				name: 'Yes',
-			},
-			{
 				value: false,
 				name: 'No',
 			},
+			{
+				value: true,
+				name: 'Yes',
+			}
 		],
 	},
 ];
