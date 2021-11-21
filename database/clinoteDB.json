@@ -1,35 +1,7 @@
 {
     "version": "1.0",
     "name": "clinoteDB",
-    "password": "",
     "notes": {
-        "f79068ee-e474-43ac-b981-c02527f53e0f": {
-            "id": "f79068ee-e474-43ac-b981-c02527f53e0f",
-            "title": "my note",
-            "content": "description for my note :)",
-            "password": false,
-            "createdAt": "2021-11-19"
-        },
-        "9ab1916f-6730-4fc0-97a6-fc5264bb78d6": {
-            "id": "9ab1916f-6730-4fc0-97a6-fc5264bb78d6",
-            "title": "how to set up discord",
-            "content": "true",
-            "password": false,
-            "createdAt": "2021-11-19"
-        },
-        "6c6c5b3a-4e7d-4b22-9542-c0fd69023ea8": {
-            "id": "6c6c5b3a-4e7d-4b22-9542-c0fd69023ea8",
-            "title": "asa",
-            "content": "asasa",
-            "password": false,
-            "createdAt": "2021-11-19"
-        },
-        "b9f8df77-6235-4120-bc67-9a365bc18bbb": {
-            "id": "b9f8df77-6235-4120-bc67-9a365bc18bbb",
-            "title": "como hacer panqueques 2",
-            "content": "como no hacer panqueques",
-            "password": false,
-            "createdAt": "2021-11-21"
-        }
+        
     }
 }

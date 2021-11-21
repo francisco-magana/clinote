@@ -46,7 +46,7 @@ const options = [
 const createNote = async () => {
 	const { title, content, password } = await inquirer.prompt(options);
 	const note = new Note(title, content, password);
-    console.log(chalk.bgGreen(`Your note was created succesfully!`) + '  ' + chalk.bgBlue(note.createdAt));
+    console.log(chalk.green(`Your note was created succesfully!`) + '  ' + chalk.blueBright(note.createdAt));
 	
 	// Save the note in the DB
 	let notes  = db.get('notes');

@@ -64,7 +64,6 @@ const editNotes = async (noteID) => {
 	);
 
 	const noteToEdit = db.get('notes')[noteID];
-	console.log(noteToEdit);
 
 	// Edit Titlte of the note
 	const { editTitle } = await inquirer.prompt(editTitleOptions);
@@ -80,7 +79,6 @@ const editNotes = async (noteID) => {
 	if (editContent) {
 		let result = await inquirer.prompt(getNewNoteContent);
 		newNoteContent = result.newNoteContent;
-		console.log(newNoteContent);
 	}
 
 	noteToEdit.title = editTitle ? newNoteTitle : noteToEdit.title;
@@ -91,6 +89,7 @@ const editNotes = async (noteID) => {
 		notes[noteID] = noteToEdit;
 		db.set('notes', notes);
 		db.sync();
+		console.log(chalk.greenBright(`\n LA NOTA HA SIDO EDITADA CON EXITO`));
 	}
 };
 
