@@ -87,7 +87,7 @@ const editNotes = async (noteID) => {
 		notes[noteID] = noteToEdit;
 		db.set('notes', notes);
 		db.sync();
-		console.log(chalk.greenBright(`\n LA NOTA HA SIDO EDITADA CON EXITO`));
+		console.log(chalk.greenBright(`\n The note was succesfully edited`));
 	}
 };
 
