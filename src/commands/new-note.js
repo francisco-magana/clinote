@@ -22,30 +22,15 @@ const options = [
 		type: 'input',
 		name: 'content',
 		message: 'Content:',
-	},
-	{
-		type: 'list',
-		name: 'password',
-		message: 'Do you want to protect your note with your master password?',
-		choices: [
-			{
-				value: false,
-				name: 'No',
-			},
-			{
-				value: true,
-				name: 'Yes',
-			}
-		],
-	},
+	}
 ];
 
 /**
  * Method that allow us to create a new note by prompt
  */
 const createNote = async () => {
-	const { title, content, password } = await inquirer.prompt(options);
-	const note = new Note(title, content, password);
+	const { title, content } = await inquirer.prompt(options);
+	const note = new Note(title, content);
     console.log(chalk.green(`Your note was created succesfully!`) + '  ' + chalk.blueBright(note.createdAt));
 	
 	// Save the note in the DB

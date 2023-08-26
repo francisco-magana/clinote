@@ -5,7 +5,6 @@ class Note {
     id = '';
     title = '';
     content = '';
-    password = false;
     createdAt = null;
 
     /**
@@ -19,7 +18,6 @@ class Note {
         this.id = uuidv4();
         this.title = title;
         this.content = content;
-        this.password = password ? password : false;
         this.createdAt = new Date().toISOString().substr(0, 10);
     }
 
