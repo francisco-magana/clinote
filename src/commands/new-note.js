@@ -5,13 +5,8 @@ const path = require('path');
 
 const Note = require('../models/note.model');
 
-// Open the JSON database with a package
 const db = new jsonDB(path.join(__dirname + '../../../database/clinoteDB.json'));
 
-
-/**
- * Steps to make the note
- */
 const options = [
 	{
 		type: 'input',
