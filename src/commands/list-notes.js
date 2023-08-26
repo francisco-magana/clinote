@@ -18,7 +18,6 @@ const getAllNoteTitles = () => {
         });
     }
 
-    // Add default no want to read option
     choices.push({
         value: 'no-read',
         name: 'I do not want a note, thanks!'
