@@ -65,7 +65,6 @@ const editNotes = async (noteID) => {
 
 	const noteToEdit = db.get('notes')[noteID];
 
-	// Edit Titlte of the note
 	const { editTitle } = await inquirer.prompt(editTitleOptions);
 
 	if (editTitle) {
@@ -73,7 +72,6 @@ const editNotes = async (noteID) => {
 		newNoteTitle = result.newNoteTitle;
 	}
 
-	// Edit the content of the note
 	const { editContent } = await inquirer.prompt(editContentOptions);
 
 	if (editContent) {
