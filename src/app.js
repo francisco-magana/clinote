@@ -13,7 +13,8 @@ const main = async() => {
     let option, noteID;
 
     do {
-
+        
+        console.log("<Welcome coder!/>")
         option = await getMainMenuOption();
         
         switch(option) {
