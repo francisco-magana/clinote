@@ -2,7 +2,7 @@
 
 Clinote is a CLI tool to take notes in your terminal. Is easy to use and personal. All the notes taked with the app are stored in a local JSON file. Don't write personal information if someone more can use your computer.
 
-Clinote allow us to create, update, delete or read our personal notes in an easy way whitout leaving the terminal.
+Clinote allow us to create, update, delete or read our personal notes in an easy way without leaving the terminal.
 
 ## Why a note app in our Terminal?
 
