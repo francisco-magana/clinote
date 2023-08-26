@@ -25,20 +25,15 @@ const options = [
 	}
 ];
 
-/**
- * Method that allow us to create a new note by prompt
- */
 const createNote = async () => {
 	const { title, content } = await inquirer.prompt(options);
 	const note = new Note(title, content);
     console.log(chalk.green(`Your note was created succesfully!`) + '  ' + chalk.blueBright(note.createdAt));
-	
-	// Save the note in the DB
+
 	let notes  = db.get('notes');
 	notes[note.id] = note;
 	db.set('notes', notes);
 
-	// Sync the file with de new values
 	db.sync();
 };
 
