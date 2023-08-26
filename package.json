@@ -1,7 +1,7 @@
 {
   "name": "clinote",
   "version": "1.0.0",
-  "description": ":warning: **This readme and the project are works in progress**: Be patient :smile:",
+  "description": "Simple CLI app to take notes without leaving the terminal",
   "main": "bin/index.js",
   "bin": {
     "clinote": "bin/index.js"
@@ -9,7 +9,7 @@
   "scripts": {
     "start": "node bin/index.js"
   },
-  "keywords": [],
+  "keywords": ['cli', 'notes', 'terminal', 'utility'],
   "author": "Francisco Magaña",
   "license": "ISC",
   "dependencies": {
