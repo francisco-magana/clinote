@@ -9,7 +9,7 @@
   "scripts": {
     "start": "node bin/index.js"
   },
-  "keywords": ['cli', 'notes', 'terminal', 'utility'],
+  "keywords": ["cli", "notes", "terminal", "utility"],
   "author": "Francisco Magaña",
   "license": "ISC",
   "dependencies": {
