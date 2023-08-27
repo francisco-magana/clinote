@@ -26,8 +26,10 @@ npm install
 npm install -g .
 ```
 
-## USAGE
+## Usage
 
 ### clinote
 
 This is the main command of the application, this command will open a Terminal GUI with all the options of the app and allow us to navigate with our keyboard. Only follow the steps to take, delete, update or read notes.
+
+Visit the [GitHub pages site](https://francisco-magana.github.io/clinote-project-page/) of `Clinote` to learn more.
